@@ -20,7 +20,7 @@ function NavBar() {
         <nav>
             <Link to="/">Home</Link> | {" "}
             <Link to="/recipes">Recipes</Link> | {" "}
-            <button onClick={handleScrollToKeep}>Keep</button>  | {" "}
+            <button onClick={handleScrollToKeep}>Saved</button>  | {" "}
             <Link to="/about">About</Link>
         </nav>
     )

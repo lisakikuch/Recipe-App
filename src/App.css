@@ -33,3 +33,72 @@
 a {
   padding: 10px;
 }
+
+
+/* About */
+
+.about-section {
+  position: relative;
+  padding: 120px 0px;
+}
+
+.about-section .content-column {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.about-section .content-column .inner-col{
+  position: relative;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+
+.about-section .content-column .about{
+  position: relative;
+  margin-bottom: 40px;
+  line-height: 32px;
+  font-size: 15px;
+  color: black;
+}
+
+.about-section .image-column {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about-section .image-column .inner-col{
+  position: relative;
+  padding: 40px 0px 0px;
+  margin-left: 50px;
+}
+
+.about-section .image-column .inner-col:after{
+  position: absolute;
+  content: '';
+  z-index: -1;
+  left: 40px;
+  right: 0px;
+  top: 0px;
+  bottom: 100px;
+  border: 2px solid #d7a449;
+}
+
+.about-section .image-column .inner-col .image{
+	position:relative;
+}
+
+.about-section .image-column .inner-col .image:before{
+	position:absolute;
+	content:'';
+	left:-50px;
+	bottom:-50px;
+	width:299px;
+	height:299px;
+	background:url(https://images.pexels.com/photos/3622643/pexels-photo-3622643.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) no-repeat;
+}
+
+.about-section .image-column .inner-col .image img{
+	position:relative;
+	width:100%;
+	display:block;
+}
