@@ -7,9 +7,9 @@ function RecipeCard({ recipe, keptRecipes, addKeptRecipe, removeKeptRecipe }) {
     const { idMeal, strMeal, strCategory, strMealThumb } = recipe
     const isKept = keptRecipes.some((r)=> r.idMeal === idMeal)
 
-    const handleKeepClick =()=> {
+    const handleKeepClick =()=> {    
         if (isKept) {
-            removeKeptRecipe(idMeal)
+            removeKeptRecipe(idMeal) 
         } else {
             addKeptRecipe(recipe)
         }
@@ -34,7 +34,7 @@ function RecipeCard({ recipe, keptRecipes, addKeptRecipe, removeKeptRecipe }) {
                 {isKept ? 'Unsave' : 'Save'}
             </button>
         </div>
-    )
+    );
 }
 
 export default RecipeCard;
